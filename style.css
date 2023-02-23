@@ -21,8 +21,8 @@
 }
 
 ul{
-    margin: 20px auto;
-    width: 60%;
+    margin: 3% auto;
+    width: 65%;
     text-align: center;
     justify-content: center;
     background-color: rgba(255,255,255,0.9);
@@ -43,20 +43,28 @@ a:hover{
 .converter{
 
     display: block;
+    position: relative;
+    
     width: 60%;
-    margin: 2rem auto;
-    border-radius: 0.3125rem;
+    margin: 20px auto;
+    border-radius: 5px;
     text-align: center;
-    padding: 1.25rem;
+    padding: 20px;
     background-color: rgba(255,255,255,0.9);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
 }
 
+.inputdiv{
+    padding: 0 20px;
+    margin: 0 auto;
+    display: inline-block;
+}
 
 #input,#result{
 
     padding: 10px;
     font-size: 20px;
+    margin: 0 auto;
     font-weight: bold;
     width: 200px;
     text-align: center;
@@ -67,6 +75,47 @@ a:hover{
 
 #inputType,#resultType{
     width: 200px;
+    margin: 0 auto;
     font-size: 15px;
 }
 
+
+@media screen and (max-width: 500px) {
+
+    .inputdiv{
+        padding: 0 20px;
+        margin: 2px auto;
+        display: block;
+    }
+
+    #input,#result{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #inputType,#resultType{
+        width: 200px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .inputdiv{
+        padding: 0 20px;
+        margin: 2px auto;
+        display: block;
+    }
+
+    #input,#result{
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    #inputType,#resultType{
+        width: 160px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+}
